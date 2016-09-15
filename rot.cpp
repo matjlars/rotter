@@ -35,7 +35,6 @@ int main()
 	
 	std::cout << "input string: ";
 	std::getline(std::cin, input);
-	//std::tolower(input);
 	
 	int i;
 	for(i = 0; i < 26; ++i){
