@@ -33,12 +33,12 @@ int main()
 {
 	std::string input;
 	
-	std::cout << "input string: ";
+	std::cout << "input encrypted string: ";
 	std::getline(std::cin, input);
 	
 	int i;
-	for(i = 0; i < 26; ++i){
-		std::cout << "rot " << i << ": " << rot(input, i) << std::endl;
+	for(i = 25; i >= 0; --i){
+		std::cout << "rot " << (26-i) << ": " << rot(input, i) << std::endl;
 	}
 	
 	std::cout << "HTH!" << std::endl;
